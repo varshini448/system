@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Management System</title>
+    <meta
+      name="description"
+      content="Professional project showcase for an E-Learning Management System developed for Anna University."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top">
+          <span class="brand-mark">EL</span>
+          <span>
+            <strong>E-Learning LMS</strong>
+            <small>Project Showcase</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#modules">Modules</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#results">Results</a>
+          <a href="#future">Future</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Anna University Project Report 2026</p>
+            <h1>Professional web presentation for an E-Learning Management System.</h1>
+            <p class="hero-text">
+              A modern learning platform built to centralize course delivery, simplify assessment,
+              improve progress tracking, and create a smoother digital experience for students,
+              instructors, and administrators.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#overview">Explore Project</a>
+              <a class="button button-secondary" href="dashboard.html">Open Dashboard</a>
+              <a class="button button-secondary" href="report.pdf" target="_blank" rel="noopener">
+                View Report
+              </a>
+            </div>
+
+            <ul class="hero-points" aria-label="Key strengths">
+              <li>Role-based access for Admin, Instructor, and Student</li>
+              <li>Responsive web interface for desktop and mobile use</li>
+              <li>Automated assessment, analytics, and progress monitoring</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-card glass-card">
+              <p class="panel-label">Performance Snapshot</p>
+              <div class="stats-grid">
+                <article>
+                  <strong class="stat-number" data-target="24">0</strong>
+                  <span>Hours access</span>
+                </article>
+                <article>
+                  <strong class="stat-number" data-target="1.5">0</strong>
+                  <span>Sec page load</span>
+                </article>
+                <article>
+                  <strong class="stat-number" data-target="0.3">0</strong>
+                  <span>Sec query time</span>
+                </article>
+                <article>
+                  <strong class="stat-number" data-target="3">0</strong>
+                  <span>Core user roles</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="panel-card accent-card">
+              <p class="panel-label">Built Around</p>
+              <div class="chip-row">
+                <span>Course Management</span>
+                <span>Assessments</span>
+                <span>Live Tracking</span>
+                <span>Secure Access</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section" id="overview">
+          <div class="section-heading">
+            <p class="eyebrow">Project Overview</p>
+            <h2>Why this system matters</h2>
+          </div>
+
+          <div class="overview-grid">
+            <article class="content-card">
+              <h3>Problem Identified</h3>
+              <p>
+                Traditional academic workflows often depend on fragmented communication, manual
+                submissions, delayed feedback, and disconnected records. That creates inefficiency
+                for institutions and frustration for learners.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <h3>Project Objective</h3>
+              <p>
+                The project proposes a robust and interactive LMS that centralizes educational
+                activities, supports digital assignment handling, secures user authentication, and
+                gives students a real-time view of their progress.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <h3>Scope</h3>
+              <p>
+                The system focuses on responsive interfaces, secure data storage, course
+                management, assessment tracking, content delivery, and a scalable architecture for
+                modern digital learning environments.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-soft" id="modules">
+          <div class="section-heading">
+            <p class="eyebrow">User-Friendly Options</p>
+            <h2>Role-based experience that feels clear and usable</h2>
+          </div>
+
+          <div class="role-selector" role="tablist" aria-label="Role views">
+            <button class="role-tab active" type="button" data-role="student" role="tab" aria-selected="true">
+              Student
+            </button>
+            <button class="role-tab" type="button" data-role="instructor" role="tab" aria-selected="false">
+              Instructor
+            </button>
+            <button class="role-tab" type="button" data-role="admin" role="tab" aria-selected="false">
+              Admin
+            </button>
+          </div>
+
+          <div class="role-panel active" data-panel="student">
+            <div class="feature-grid">
+              <article class="feature-card">
+                <h3>Simple Enrollment</h3>
+                <p>Students can join courses, access materials, and start learning from one dashboard.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Digital Submission</h3>
+                <p>Assignments and quizzes can be submitted online with quick status visibility.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Progress Dashboard</h3>
+                <p>Course completion, grades, and performance insights are visible in real time.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="role-panel" data-panel="instructor">
+            <div class="feature-grid">
+              <article class="feature-card">
+                <h3>Course Builder</h3>
+                <p>Upload videos, PDFs, links, and organize learning resources into structured modules.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Assessment Control</h3>
+                <p>Create assignments, review submissions, automate objective grading, and give feedback.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Analytics Support</h3>
+                <p>Track participation, identify weak topics, and support learners with better decisions.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="role-panel" data-panel="admin">
+            <div class="feature-grid">
+              <article class="feature-card">
+                <h3>Secure User Management</h3>
+                <p>Manage authentication, authorization, and role-based access across the platform.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Centralized Data</h3>
+                <p>Keep records, user data, and course information in one structured system.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Scalable Operations</h3>
+                <p>Support multiple users, dependable performance, and smooth system expansion.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="architecture">
+          <div class="section-heading">
+            <p class="eyebrow">System Design</p>
+            <h2>Structured for scale, reliability, and maintainability</h2>
+          </div>
+
+          <div class="architecture-grid">
+            <article class="stack-card">
+              <span>01</span>
+              <h3>Presentation Layer</h3>
+              <p>Responsive user interface designed for intuitive access across desktop and mobile devices.</p>
+            </article>
+            <article class="stack-card">
+              <span>02</span>
+              <h3>Application Layer</h3>
+              <p>Business logic for workflows, assessment handling, rule-based validation, and automation.</p>
+            </article>
+            <article class="stack-card">
+              <span>03</span>
+              <h3>Data Layer</h3>
+              <p>Centralized storage for user credentials, course content, results, and analytics records.</p>
+            </article>
+          </div>
+
+          <div class="process-strip">
+            <div>
+              <h3>Core Modules</h3>
+              <p>User Management, Course Management, Assessment, and Progress Tracking work together as one integrated system.</p>
+            </div>
+            <div>
+              <h3>Automation</h3>
+              <p>Grading, reporting, validation, and performance monitoring reduce manual workload and improve consistency.</p>
+            </div>
+            <div>
+              <h3>Scalability</h3>
+              <p>Layered architecture, optimized data handling, and cloud-ready deployment support future growth.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-dark" id="results">
+          <div class="section-heading light">
+            <p class="eyebrow">Results And Analysis</p>
+            <h2>Measured outcomes from the report</h2>
+          </div>
+
+          <div class="results-grid">
+            <article class="results-card">
+              <h3>Usability</h3>
+              <p>Each role reaches its dedicated dashboard with secure access and clear navigation flow.</p>
+            </article>
+            <article class="results-card">
+              <h3>Performance</h3>
+              <p>Most pages load in under 1.5 seconds, while database query execution stays below 0.3 seconds.</p>
+            </article>
+            <article class="results-card">
+              <h3>Reliability</h3>
+              <p>Stress testing showed stability during concurrent usage with no major performance degradation.</p>
+            </article>
+            <article class="results-card">
+              <h3>Comparison</h3>
+              <p>The proposed LMS improves accessibility, data centralization, and evaluation speed over manual systems.</p>
+            </article>
+          </div>
+
+          <div class="comparison-table" aria-label="Comparison between traditional methods and proposed LMS">
+            <div class="comparison-head">Traditional / Existing</div>
+            <div class="comparison-head">Proposed LMS</div>
+            <div>Physical presence required</div>
+            <div>24/7 remote access</div>
+            <div>Manual and time-consuming evaluation</div>
+            <div>Automated and instant processing</div>
+            <div>Scattered files and records</div>
+            <div>Unified centralized database</div>
+            <div>One-size-fits-all flow</div>
+            <div>Personalized dashboard experience</div>
+          </div>
+        </section>
+
+        <section class="section" id="future">
+          <div class="section-heading">
+            <p class="eyebrow">Future Enhancements</p>
+            <h2>Clear direction for the next version</h2>
+          </div>
+
+          <div class="future-grid">
+            <article class="future-card">
+              <h3>AI Personalization</h3>
+              <p>Adaptive learning paths based on user behavior, engagement, and academic performance.</p>
+            </article>
+            <article class="future-card">
+              <h3>Mobile Application</h3>
+              <p>A dedicated app to make the platform even more accessible and comfortable for daily use.</p>
+            </article>
+            <article class="future-card">
+              <h3>Live Virtual Classes</h3>
+              <p>Integrated real-time classroom sessions for stronger interaction between instructors and students.</p>
+            </article>
+            <article class="future-card">
+              <h3>Gamification</h3>
+              <p>Badges, rankings, and rewards to increase motivation and active course participation.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-soft" id="faq">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Quick answers for viewers of the project page</h2>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>What is the main purpose of this LMS project?</summary>
+              <p>
+                The project creates a centralized digital learning platform where course delivery,
+                assessment, user management, and progress tracking can happen in one place.
+              </p>
+            </details>
+
+            <details>
+              <summary>Who can use the system?</summary>
+              <p>
+                The report highlights three key user roles: administrators, instructors, and
+                students, each with role-specific access and responsibilities.
+              </p>
+            </details>
+
+            <details>
+              <summary>What makes the system user-friendly?</summary>
+              <p>
+                A responsive interface, clear dashboards, centralized content access, automated
+                processes, and faster feedback all contribute to a smoother user experience.
+              </p>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <p class="eyebrow">Project Credits</p>
+          <h2>E-Learning Management System</h2>
+          <p>Prepared from the Anna University project report submitted in April 2026.</p>
+        </div>
+
+        <div class="footer-actions">
+          <a class="button button-secondary" href="dashboard.html">Open Dashboard</a>
+          <a class="button button-primary" href="report.pdf" target="_blank" rel="noopener">Open Full Report</a>
+          <a class="button button-secondary" href="#top">Back To Top</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
